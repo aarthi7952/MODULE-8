@@ -26,11 +26,26 @@ To write a Python program to:
 ---
 
 ## 💻  Program
+```
+n = int(input())
+students = []
 
-Add Code Here
+for _ in range(n):
+    name = input()
+    grade = float(input())
+    students.append([name, grade])
 
+grades = sorted(set([g for _, g in students]))
+second_lowest = grades[1]
+
+names = sorted([name for name, grade in students if grade == second_lowest])
+
+for name in names:
+    print(name)
+```
 ## Output
+<img width="1453" height="704" alt="447321555-5f0b905f-8769-4011-b563-8c1167526f30" src="https://github.com/user-attachments/assets/3a9c165d-85fd-4d20-90a4-cfa8e36b9f5f" />
 
 ## Result
-
+Thus, the program is executed successfully
 
